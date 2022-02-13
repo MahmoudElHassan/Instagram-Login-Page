@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Instagram Login Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="Sidebar" id="SideBar">
+		<a href="#" class="close" onclick="CloseNav()">&times;</a>
+		<div>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">SUPPORT</a></li>
+				<li><a href="#">JOBS</a></li>
+				<li><a href="#">PRIVACY</a></li>
+				<li><a href="#">TERMS</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<div class="wrapper">
+		<div class="header">
+			<div class="var">
+				<button onclick="LiteMode()">Lite</button>
+					<span style="font-size: 20px; cursor: pointer;; display: flex; " onclick="openNav()">&#9776;</span>
+			</div>
+			<div class="top">
+				<div class="logo">
+				<img src="instagram.png" alt="instagram" style="width:175px;">
+			</div>
+			<div>
+				<form class="form" onsubmit="return FormValidat();" action="">
+					<div class="message" id="error">Please enter your Account</div>
+					<div class="input_field">
+						<input type="text" placeholder="Phone number, username, or email" class="input" id="User">
+					</div>
+					<div class="input_field">
+						<input type="password" placeholder="Password" class="input" id="Pass">
+					</div>
+					<div class="btn"><input type="submit" value="Log In"></input></div>
+				</form>
+			</div>
+
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="facebook.png" alt="facebook">
+					<p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+			</div>
+			<div class="signup">
+				<p>Don't have an account? <a href="#">Sign up</a></p>
+			</div>
+			<div class="apps">
+				<p>Get the app.</p>
+				<div class="icons">
+					<a href="#"><img src="appstore.png" alt="appstore"></a>
+					<a href="#"><img src="googleplay.png" alt="googleplay"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<div class="links">
+				<ul>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SUPPORT</a></li>
+					<li><a href="#">PRESS</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">JOBS</a></li>
+					<li><a href="#">PRIVACY</a></li>
+					<li><a href="#">TERMS</a></li>
+					<li><a href="#">DIRECTORY</a></li>
+					<li><a href="#">PROFILES</a></li>
+					<li><a href="#">HASHTAGS</a></li>
+					<li><a href="#">LANGUAGE</a></li>
+				</ul>
+			</div>	
+			<div class="copyright">
+				© 2019 INSTAGRAM
+			</div>
+		</div>
+	</div>
+
+
+	<script src="main.js"></script>
+
+</body>
+</html>
